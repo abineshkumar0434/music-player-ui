@@ -1,0 +1,95 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    min-height: 100vh;
+    background: linear-gradient(135deg, #6366f1, #ec4899);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.player {
+    background: #ffffff;
+    width: 320px;
+    padding: 25px;
+    border-radius: 20px;
+    box-shadow: 0 25px 40px rgba(0, 0, 0, 0.2);
+    text-align: center;
+}
+
+.album-art img {
+    width: 250px;
+    border-radius: 15px;
+    margin-bottom: 20px;
+}
+
+.song-info h2 {
+    font-size: 1.4rem;
+    color: #111827;
+}
+
+.song-info p {
+    color: #6b7280;
+    margin-bottom: 20px;
+}
+
+/* Progress Bar */
+.progress-container {
+    width: 100%;
+    height: 6px;
+    background: #e5e7eb;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.progress-bar {
+    width: 35%;
+    height: 100%;
+    background: linear-gradient(90deg, #6366f1, #ec4899);
+}
+
+/* Time */
+.time {
+    display: flex;
+    justify-content: space-between;
+    font-size: 0.8rem;
+    color: #6b7280;
+    margin: 8px 0 20px;
+}
+
+/* Controls */
+.controls {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+}
+
+.controls button {
+    border: none;
+    background: #f3f4f6;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    font-size: 1.2rem;
+    cursor: pointer;
+    transition: transform 0.2s, background 0.3s;
+}
+
+.controls button:hover {
+    transform: scale(1.1);
+    background: #e0e7ff;
+}
+
+.controls .play {
+    background: linear-gradient(135deg, #6366f1, #ec4899);
+    color: #ffffff;
+}
+
+.controls .play:hover {
+    background: linear-gradient(135deg, #4f46e5, #db2777);
+}
